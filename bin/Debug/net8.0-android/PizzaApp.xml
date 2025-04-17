@@ -1,0 +1,4051 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PizzaApp</name>
+    </assembly>
+    <members>
+        <member name="T:PizzaApp.Models.Pizza">
+            <inheritdoc/>
+        </member>
+        <member name="P:PizzaApp.Models.Pizza.CartQuantity">
+            <inheritdoc cref="F:PizzaApp.Models.Pizza._cartQuantity"/>
+        </member>
+        <member name="T:PizzaApp.ViewModels.AllPizzaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PizzaApp.ViewModels.AllPizzaViewModel.FromSearch">
+            <inheritdoc cref="F:PizzaApp.ViewModels.AllPizzaViewModel._fromSearch"/>
+        </member>
+        <member name="P:PizzaApp.ViewModels.AllPizzaViewModel.Searching">
+            <inheritdoc cref="F:PizzaApp.ViewModels.AllPizzaViewModel._searching"/>
+        </member>
+        <member name="F:PizzaApp.ViewModels.AllPizzaViewModel.searchPizzasCommand">
+            <summary>The backing field for <see cref="P:PizzaApp.ViewModels.AllPizzaViewModel.SearchPizzasCommand"/>.</summary>
+        </member>
+        <member name="P:PizzaApp.ViewModels.AllPizzaViewModel.SearchPizzasCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:PizzaApp.ViewModels.AllPizzaViewModel.SearchPizzas(System.String)"/>.</summary>
+        </member>
+        <member name="F:PizzaApp.ViewModels.AllPizzaViewModel.goToDetailsPageCommand">
+            <summary>The backing field for <see cref="P:PizzaApp.ViewModels.AllPizzaViewModel.GoToDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:PizzaApp.ViewModels.AllPizzaViewModel.GoToDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:PizzaApp.ViewModels.AllPizzaViewModel.GoToDetailsPage(PizzaApp.Models.Pizza)"/>.</summary>
+        </member>
+        <member name="T:PizzaApp.ViewModels.DetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:PizzaApp.ViewModels.DetailsViewModel.Pizza">
+            <inheritdoc cref="F:PizzaApp.ViewModels.DetailsViewModel._pizza"/>
+        </member>
+        <member name="T:PizzaApp.ViewModels.HomeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:PizzaApp.ViewModels.HomeViewModel.goToAllPizzasPageCommand">
+            <summary>The backing field for <see cref="P:PizzaApp.ViewModels.HomeViewModel.GoToAllPizzasPageCommand"/>.</summary>
+        </member>
+        <member name="P:PizzaApp.ViewModels.HomeViewModel.GoToAllPizzasPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:PizzaApp.ViewModels.HomeViewModel.GoToAllPizzasPage(System.Boolean)"/>.</summary>
+        </member>
+        <member name="F:PizzaApp.ViewModels.HomeViewModel.goToDetailsPageCommand">
+            <summary>The backing field for <see cref="P:PizzaApp.ViewModels.HomeViewModel.GoToDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:PizzaApp.ViewModels.HomeViewModel.GoToDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:PizzaApp.ViewModels.HomeViewModel.GoToDetailsPage(PizzaApp.Models.Pizza)"/>.</summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_002">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_001">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_000">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.BreadcrumbBarItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_005">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RangeBaseAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_004">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SliderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_003">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ColorPickerSliderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_006">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ColorSpectrumAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_009">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_008">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_007">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.DropDownButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_010">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_011">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_012">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_013">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.MenuBarItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_014">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_015">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.NavigationViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_016">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.NumberBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_017">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.PersonPictureAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_018">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.PipsPagerAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_019">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_020">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_021">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.RadioButtonsAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_022">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.RatingControlAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_023">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.RepeaterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_024">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.SplitButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_025">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TabViewAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_027">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_026">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TabViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_028">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TeachingTipAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_029">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.ToggleSplitButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_030">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TreeViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_032">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_031">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TreeViewItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_037">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_036">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SelectorAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_035">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewBaseAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_034">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_033">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_038">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_046">
+            <summary>
+            Builder for Android.Views.View
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_045">
+            <summary>
+            Builder for Android.Views.ViewGroup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_044">
+            <summary>
+            Builder for Uno.UI.UnoViewGroup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_043">
+            <summary>
+            Builder for Uno.UI.Controls.BindableView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_042">
+            <summary>
+            Builder for Windows.UI.Xaml.UIElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_041">
+            <summary>
+            Builder for Windows.UI.Xaml.FrameworkElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_040">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.IconElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_039">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.AnimatedIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_048">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.IconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_047">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.AnimatedIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_049">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_050">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.BackdropMaterial
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_051">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.BitmapIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_053">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Control
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_052">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.BreadcrumbBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_055">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ContentControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_054">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.BreadcrumbBarItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_056">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ColorPicker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_058">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.FlyoutBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_057">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.CommandBarFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_061">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ButtonBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_060">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Button
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_059">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.DropDownButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_062">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Expander
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_063">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_064">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.FontIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_065">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ImageIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_066">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ImageIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_067">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.InfoBadge
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_068">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_069">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.InfoBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_070">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_071">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ItemsRepeater
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_072">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_073">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Layout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_074">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.LayoutContext
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_075">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.MenuBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_076">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.MenuBarItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_078">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_077">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.MenuBarItemFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_079">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_081">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_080">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_082">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationViewItemHeader
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_083">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_084">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_085">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NonVirtualizingLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_086">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NonVirtualizingLayoutContext
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_087">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NumberBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_088">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ParallaxView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_089">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PathIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_090">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PersonPicture
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_091">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_092">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PipsPager
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_093">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PipsPagerTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_095">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.RangeBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_094">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_096">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_097">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressRing
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_098">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_099">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RadioButtons
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_103">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyoutItemBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_102">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyoutItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_101">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ToggleMenuFlyoutItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_100">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_104">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RatingControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_106">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RatingItemInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_105">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RatingItemFontInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_107">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RatingItemImageInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_108">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RefreshContainer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_109">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RefreshVisualizer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_112">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ContentPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_111">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_110">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.RevealListViewItemPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_113">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.SplitButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_115">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.VirtualizingLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_114">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.StackLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_116">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.SwipeControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_117">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.SwipeItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_118">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.SwipeItems
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_119">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.SymbolIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_120">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TabView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_123">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.SelectorItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_122">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_121">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TabViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_124">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_125">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TeachingTip
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_126">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_127">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TextCommandBarFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_128">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ToggleSplitButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_129">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TreeView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_130">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TreeViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_131">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_136">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_135">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.Selector
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_134">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListViewBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_133">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_132">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TreeViewList
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_137">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TreeViewNode
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_138">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.TwoPaneView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_139">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.UniformGridLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_140">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_141">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.WebView2
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_142">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ExpanderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_144">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Panel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_143">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.LayoutPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_145">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.NumberBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_146">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PagerControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_147">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.PagerControlTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_148">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_149">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.ProgressRingAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_150">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.FlowLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_152">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Slider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_151">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.ColorPickerSlider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_153">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.ColorSpectrum
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_154">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.ColumnMajorUniformToLargestGridLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_157">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AppBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_156">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CommandBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_155">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_158">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_159">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusFilterConverter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_160">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_161">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_163">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Grid
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_162">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.MonochromaticOverlayPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_164">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_165">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenterTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_166">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.TabViewListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_167">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.ColorPickerSliderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_168">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Controls.Primitives.ColorSpectrumAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_171">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Brush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_170">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.XamlCompositionBrushBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_169">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Media.AcrylicBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_172">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Media.RadialGradientBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_174">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Media.RevealBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_173">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Media.RevealBackgroundBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_175">
+            <summary>
+            Builder for Microsoft.UI.Xaml.Media.RevealBorderBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_177">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Geometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_176">
+            <summary>
+            Builder for Uno.Media.StreamGeometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_186">
+            <summary>
+            Builder for Android.Content.Context
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_185">
+            <summary>
+            Builder for Android.Content.ContextWrapper
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_184">
+            <summary>
+            Builder for Android.Views.ContextThemeWrapper
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_183">
+            <summary>
+            Builder for Android.App.Activity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_182">
+            <summary>
+            Builder for AndroidX.Core.App.ComponentActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_181">
+            <summary>
+            Builder for AndroidX.Activity.ComponentActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_180">
+            <summary>
+            Builder for AndroidX.Fragment.App.FragmentActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_179">
+            <summary>
+            Builder for AndroidX.AppCompat.App.AppCompatActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_178">
+            <summary>
+            Builder for Uno.UI.BaseActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_187">
+            <summary>
+            Builder for Uno.UI.DelegateActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_191">
+            <summary>
+            Builder for Android.Widget.TextView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_190">
+            <summary>
+            Builder for Android.Widget.Button
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_189">
+            <summary>
+            Builder for AndroidX.AppCompat.Widget.AppCompatButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_188">
+            <summary>
+            Builder for Uno.UI.Controls.BindableButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_195">
+            <summary>
+            Builder for Android.Widget.CompoundButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_194">
+            <summary>
+            Builder for Android.Widget.CheckBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_193">
+            <summary>
+            Builder for AndroidX.AppCompat.Widget.AppCompatCheckBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_192">
+            <summary>
+            Builder for Uno.UI.Controls.BindableCheckBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_197">
+            <summary>
+            Builder for AndroidX.DrawerLayout.Widget.DrawerLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_196">
+            <summary>
+            Builder for Uno.UI.Controls.BindableDrawerLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_199">
+            <summary>
+            Builder for AndroidX.Fragment.App.Fragment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_198">
+            <summary>
+            Builder for Uno.UI.Controls.BindableFragment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_202">
+            <summary>
+            Builder for Android.Widget.AdapterView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_201">
+            <summary>
+            Builder for Uno.UI.Controls.NativeHorizontalListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_200">
+            <summary>
+            Builder for Uno.UI.Controls.BindableHorizontalListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_204">
+            <summary>
+            Builder for Android.Widget.ImageView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_203">
+            <summary>
+            Builder for Uno.UI.Controls.BindableImageView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_206">
+            <summary>
+            Builder for Android.Widget.LinearLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_205">
+            <summary>
+            Builder for Uno.UI.Controls.BindableItemsView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_209">
+            <summary>
+            Builder for Android.Widget.BaseAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_208">
+            <summary>
+            Builder for Uno.UI.Controls.ItemContainerHolderAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_207">
+            <summary>
+            Builder for Uno.UI.Controls.BindableListAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_210">
+            <summary>
+            Builder for Uno.UI.Controls.BindableListViewHelpers
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_213">
+            <summary>
+            Builder for Android.Widget.AbsListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_212">
+            <summary>
+            Builder for Android.Widget.ListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_211">
+            <summary>
+            Builder for Uno.UI.Controls.BindableListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_215">
+            <summary>
+            Builder for AndroidX.ViewPager.Widget.PagerAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_214">
+            <summary>
+            Builder for Uno.UI.Controls.BindablePagerAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_217">
+            <summary>
+            Builder for Android.Widget.ProgressBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_216">
+            <summary>
+            Builder for Uno.UI.Controls.BindableProgressBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_220">
+            <summary>
+            Builder for Android.Widget.RadioButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_219">
+            <summary>
+            Builder for AndroidX.AppCompat.Widget.AppCompatRadioButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_218">
+            <summary>
+            Builder for Uno.UI.Controls.BindableRadioButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_223">
+            <summary>
+            Builder for Android.Widget.AbsSeekBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_222">
+            <summary>
+            Builder for Android.Widget.SeekBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_221">
+            <summary>
+            Builder for Uno.UI.Controls.BindableSeekBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_225">
+            <summary>
+            Builder for AndroidX.AppCompat.Widget.SwitchCompat
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_224">
+            <summary>
+            Builder for Uno.UI.Controls.BindableSwitchCompat
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_227">
+            <summary>
+            Builder for Android.Widget.ToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_226">
+            <summary>
+            Builder for Uno.UI.Controls.BindableToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_228">
+            <summary>
+            Builder for Uno.UI.Controls.NativeCommandBarPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_229">
+            <summary>
+            Builder for Uno.UI.Controls.FauxGradientBorderPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_230">
+            <summary>
+            Builder for Uno.UI.Controls.GridViewAdapter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_231">
+            <summary>
+            Builder for Uno.UI.Controls.HorizontalGridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_232">
+            <summary>
+            Builder for Uno.UI.Controls.NativeFramePresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_233">
+            <summary>
+            Builder for Uno.UI.Controls.ManagedItemsStackPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_236">
+            <summary>
+            Builder for Android.Widget.GridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_235">
+            <summary>
+            Builder for Uno.UI.Controls.BindableGridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_234">
+            <summary>
+            Builder for Uno.UI.Controls.Legacy.GridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_237">
+            <summary>
+            Builder for Uno.UI.Controls.Legacy.HorizontalGridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_238">
+            <summary>
+            Builder for Uno.UI.Controls.Legacy.HorizontalListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_239">
+            <summary>
+            Builder for Uno.UI.Controls.Legacy.ListView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_241">
+            <summary>
+            Builder for AndroidX.SwipeRefreshLayout.Widget.SwipeRefreshLayout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_240">
+            <summary>
+            Builder for Uno.UI.Xaml.Controls.NativeRefreshControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_243">
+            <summary>
+            Builder for Windows.UI.Xaml.StateTriggerBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_242">
+            <summary>
+            Builder for Windows.UI.Xaml.AdaptiveTrigger
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_245">
+            <summary>
+            Builder for Windows.UI.Xaml.FrameworkTemplate
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_244">
+            <summary>
+            Builder for Windows.UI.Xaml.DataTemplate
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_247">
+            <summary>
+            Builder for Windows.UI.Xaml.DependencyObjectCollectionBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_246">
+            <summary>
+            Builder for Windows.UI.Xaml.DependencyObjectCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_249">
+            <summary>
+            Builder for Windows.UI.Xaml.TriggerBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_248">
+            <summary>
+            Builder for Windows.UI.Xaml.EventTrigger
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_250">
+            <summary>
+            Builder for Windows.UI.Xaml.PropertyPath
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_252">
+            <summary>
+            Builder for Windows.UI.Xaml.SetterBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_251">
+            <summary>
+            Builder for Windows.UI.Xaml.Setter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_253">
+            <summary>
+            Builder for Windows.UI.Xaml.SetterBaseCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_254">
+            <summary>
+            Builder for Windows.UI.Xaml.StateTrigger
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_255">
+            <summary>
+            Builder for Windows.UI.Xaml.Style
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_256">
+            <summary>
+            Builder for Windows.UI.Xaml.TriggerAction
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_257">
+            <summary>
+            Builder for Windows.UI.Xaml.VisualState
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_258">
+            <summary>
+            Builder for Windows.UI.Xaml.VisualStateGroup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_259">
+            <summary>
+            Builder for Windows.UI.Xaml.VisualStateManager
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_260">
+            <summary>
+            Builder for Windows.UI.Xaml.VisualTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_262">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativePage
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_261">
+            <summary>
+            Builder for Windows.UI.Xaml.ApplicationActivity
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_263">
+            <summary>
+            Builder for Windows.UI.Xaml.AttachedDependencyObject
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_264">
+            <summary>
+            Builder for Windows.UI.Xaml.ElementStub
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_265">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.AutomationAnnotation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_266">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.AutomationProperties
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_267">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AppBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_268">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AppBarButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_270">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ToggleButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_269">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AppBarToggleButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_271">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AutomationPeerAnnotation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_272">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.AutoSuggestBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_273">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.CalendarDatePickerAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_274">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_275">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.CheckBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_276">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ColorPickerSliderAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_277">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ColorSpectrumAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_278">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ComboBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_279">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ComboBoxItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_281">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_280">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ComboBoxItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_282">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.DatePickerAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_283">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.DatePickerFlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_284">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.FlipViewAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_285">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.FlipViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_286">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.FlipViewItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_287">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.FlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_288">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.GridViewAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_290">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewBaseHeaderItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_289">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.GridViewHeaderItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_291">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.GridViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_292">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.GridViewItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_293">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.GroupItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_294">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.HubAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_295">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.HubSectionAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_296">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.HyperlinkButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_297">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ImageAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_298">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.InkToolbarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_299">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_300">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListBoxItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_301">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListBoxItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_302">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListPickerFlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_303">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewHeaderItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_304">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ListViewItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_305">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.LoopingSelectorAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_306">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_307">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_308">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MapControlAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_309">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_310">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_311">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_312">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_313">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MenuBarItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_314">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MenuFlyoutItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_315">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.MenuFlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_316">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.NavigationViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_317">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PasswordBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_318">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PersonPictureAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_319">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PickerFlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_320">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PivotAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_321">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_322">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_323">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_324">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_325">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RadioButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_326">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RatingControlAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_327">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RepeatButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_328">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RichEditBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_329">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RichTextBlockAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_330">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.RichTextBlockOverflowAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_331">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ScrollBarAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_332">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_333">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SearchBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_334">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SemanticZoomAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_335">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.SettingsFlyoutAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_336">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TextBlockAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_337">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TextBoxAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_338">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ThumbAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_339">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TimePickerAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_340">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TimePickerFlyoutPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_341">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ToggleMenuFlyoutItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_342">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ToggleSwitchAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_343">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TreeViewItemAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_344">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_345">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_346">
+            <summary>
+            Builder for Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_347">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AppBarButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_348">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AppBarElementContainer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_349">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AppBarSeparator
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_351">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_350">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AppBarToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_352">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AutoSuggestBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_353">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_354">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_355">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_356">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.BitmapIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_358">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.IconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_357">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.BitmapIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_359">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Border
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_360">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CalendarDatePicker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_361">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CalendarView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_363">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CalendarViewBaseItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_362">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CalendarViewDayItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_364">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Canvas
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_365">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CaptureElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_366">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CheckBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_367">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ColorPicker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_368">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ColumnDefinition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_369">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ComboBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_370">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ComboBoxItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_371">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CommandBarFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_372">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.CommandBarOverflowPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_373">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ContentDialog
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_374">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ControlTemplate
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_375">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePickedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_376">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePicker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_378">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_377">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePickerFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_379">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePickerFlyoutItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_380">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePickerFlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_381">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DropDownButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_382">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DropDownButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_383">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.FlipView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_384">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.FlipViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_385">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Flyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_386">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.FlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_387">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.FontIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_388">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.FontIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_389">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Frame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_390">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.GridView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_392">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListViewBaseHeaderItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_391">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.GridViewHeaderItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_393">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.GridViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_394">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.GroupItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_395">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.HandwritingView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_396">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Hub
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_397">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.HubSection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_398">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.HyperlinkButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_399">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.IconSourceElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_400">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Image
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_401">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkCanvas
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_402">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_406">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RadioButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_405">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarToolButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_404">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarPenButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_403">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarBallpointPenButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_407">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarCustomPen
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_408">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarCustomPenButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_410">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_409">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarCustomToggleButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_411">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarCustomToolButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_412">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarEraserButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_413">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarFlyoutItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_414">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarHighlighterButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_415">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarMenuButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_416">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarPencilButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_417">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarPenConfigurationControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_418">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarRulerButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_419">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.InkToolbarStencilButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_420">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsPanelTemplate
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_421">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsPickedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_422">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_423">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsStackPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_424">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ItemsWrapGrid
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_425">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_426">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListBoxItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_427">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListPickerFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_428">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListPickerFlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_429">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListViewHeaderItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_430">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MediaElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_431">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MediaPlayerElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_432">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MediaPlayerPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_433">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MediaTransportControls
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_434">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_435">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuBarItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_436">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuBarItemFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_437">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_438">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyoutSeparator
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_439">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.MenuFlyoutSubItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_440">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_442">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewItemBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_441">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_443">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewItemHeader
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_444">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewItemSeparator
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_445">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewList
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_446">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NavigationViewTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_448">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.UserControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_447">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Page
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_449">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ParallaxView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_451">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TextBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_450">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PasswordBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_452">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PathIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_453">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PathIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_454">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PersonPicture
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_455">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PickerConfirmedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_456">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PickerFlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_457">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Pivot
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_458">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.PivotItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_459">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ProgressBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_460">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ProgressRing
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_461">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RatingControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_463">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RatingItemInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_462">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RatingItemFontInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_464">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RatingItemImageInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_465">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RefreshContainer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_466">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RefreshVisualizer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_467">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RelativePanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_468">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RichEditBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_469">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RichTextBlock
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_470">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RichTextBlockOverflow
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_471">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.RowDefinition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_472">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ScrollContentPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_473">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ScrollViewer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_474">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SearchBox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_475">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SemanticZoom
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_476">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SettingsFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_477">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SplitButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_478">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SplitButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_479">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SplitView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_480">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.StackPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_481">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SwapChainBackgroundPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_482">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SwapChainPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_483">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SwipeControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_484">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SwipeItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_485">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SwipeItems
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_486">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SymbolIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_487">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.SymbolIconSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_488">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TextBlock
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_489">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TextCommandBarFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_490">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TimePickedEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_491">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TimePicker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_492">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TimePickerFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_493">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TimePickerFlyoutPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_494">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ToggleSplitButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_495">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ToggleSplitButtonAutomationPeer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_496">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ToggleSwitch
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_497">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ToolTip
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_498">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TreeView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_499">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TreeViewItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_500">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TreeViewItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_501">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TreeViewList
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_502">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TreeViewNode
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_503">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TwoPaneView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_504">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.VariableSizedWrapGrid
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_505">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Viewbox
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_506">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.VirtualizingPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_508">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_507">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.VirtualizingStackPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_509">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.WebView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_511">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.TileBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_510">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.WebViewBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_512">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.WrapGrid
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_513">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ScrollView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_514">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.BindableButtonEx
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_515">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ImplicitTextBlock
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_516">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.DatePickerSelector
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_517">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativeDatePickerFlyout
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_520">
+            <summary>
+            Builder for AndroidX.ViewPager.Widget.ViewPager
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_519">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativePagedView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_518">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativeFlipView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_521">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.ListViewBaseScrollContentPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_524">
+            <summary>
+            Builder for AndroidX.RecyclerView.Widget.RecyclerView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_523">
+            <summary>
+            Builder for Uno.UI.UnoRecyclerView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_522">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativeListViewBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_525">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativePivotPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_527">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.Popup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_526">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.NativePopupBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_528">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.TimePickerSelector
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_529">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.WrapPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_531">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapTileDataSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_530">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.CustomMapTileDataSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_532">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.HttpMapTileDataSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_533">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.LocalMapTileDataSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_535">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_534">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapBillboard
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_536">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapCamera
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_537">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_538">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapCustomExperience
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_539">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapElement3D
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_541">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapLayer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_540">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapElementsLayer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_542">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapIcon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_543">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapInputEventArgs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_544">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapItemsControl
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_545">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapModel3D
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_546">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapPolygon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_547">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapPolyline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_548">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapRouteView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_549">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapScene
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_550">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapStyleSheet
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_551">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.MapTileSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_552">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.StreetsideExperience
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_553">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Maps.StreetsidePanorama
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_554">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.AppBarButtonTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_555">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.AppBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_556">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.AppBarToggleButtonTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_557">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CalendarPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_558">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CalendarViewTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_559">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CarouselPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_560">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ColorPickerSlider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_561">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ColorSpectrum
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_562">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ComboBoxTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_563">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_564">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_565">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.CommandBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_566">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.GridViewItemPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_567">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.GridViewItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_568">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.JumpListItemBackgroundConverter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_569">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_570">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ListViewItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_571">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.LoopingSelector
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_572">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.LoopingSelectorItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_573">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.LoopingSelectorPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_574">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.MenuFlyoutItemTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_575">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.MenuFlyoutPresenterTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_576">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_577">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_578">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.PivotHeaderPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_579">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.PivotPanel
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_580">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_581">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_582">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.RepeatButton
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_583">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ScrollBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_584">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.SettingsFlyoutTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_585">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.SplitViewTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_586">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.Thumb
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_587">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.TickBar
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_588">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ToggleSwitchTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_589">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ToolTipTemplateSettings
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_590">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.ScrollPresenter
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_591">
+            <summary>
+            Builder for Windows.UI.Xaml.Controls.Primitives.NativePopup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_593">
+            <summary>
+            Builder for Windows.UI.Xaml.Data.BindingBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_592">
+            <summary>
+            Builder for Windows.UI.Xaml.Data.Binding
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_594">
+            <summary>
+            Builder for Windows.UI.Xaml.Data.CollectionViewSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_595">
+            <summary>
+            Builder for Windows.UI.Xaml.Data.TemplateBinding
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_597">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.TextElement
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_596">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Block
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_598">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.BlockCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_601">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Inline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_600">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Span
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_599">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Bold
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_603">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.ContentLinkProvider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_602">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.ContactContentLinkProvider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_604">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.ContentLink
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_605">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Glyphs
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_606">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Hyperlink
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_607">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.InlineUIContainer
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_608">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Italic
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_609">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.LineBreak
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_610">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Paragraph
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_611">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.PlaceContentLinkProvider
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_612">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Run
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_613">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.TextHighlighterBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_614">
+            <summary>
+            Builder for Windows.UI.Xaml.Documents.Underline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_615">
+            <summary>
+            Builder for Windows.UI.Xaml.Input.InputScope
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_616">
+            <summary>
+            Builder for Windows.UI.Xaml.Input.InputScopeName
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_617">
+            <summary>
+            Builder for Windows.UI.Xaml.Input.KeyboardAccelerator
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_619">
+            <summary>
+            Builder for Windows.UI.Xaml.Input.XamlUICommand
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_618">
+            <summary>
+            Builder for Windows.UI.Xaml.Input.StandardUICommand
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_620">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.AcrylicBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_622">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PathSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_621">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.ArcSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_623">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.BezierSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_625">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.CacheMode
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_624">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.BitmapCache
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_628">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GeneralTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_627">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Transform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_626">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.CompositeTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_629">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.EllipseGeometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_630">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GeometryCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_631">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GeometryGroup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_632">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GradientStop
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_633">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GradientStopCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_634">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.ImageBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_635">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.ImageSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_637">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.GradientBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_636">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.LinearGradientBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_638">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.LineGeometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_639">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.LineSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_641">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Projection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_640">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Matrix3DProjection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_642">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.MatrixTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_643">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PathFigure
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_644">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PathFigureCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_645">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PathGeometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_646">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PathSegmentCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_647">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PlaneProjection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_648">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PolyBezierSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_649">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PolyLineSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_650">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.PolyQuadraticBezierSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_651">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.QuadraticBezierSegment
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_652">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.RectangleGeometry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_654">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.RevealBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_653">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.RevealBackgroundBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_655">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.RevealBorderBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_656">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.RotateTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_657">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.ScaleTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_658">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Shadow
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_659">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.SkewTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_660">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.SolidColorBrush
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_661">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.ThemeShadow
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_662">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.TimelineMarker
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_663">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.TransformGroup
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_664">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.TranslateTransform
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_665">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.XamlLight
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_667">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.Transition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_666">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_669">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_668">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.BackEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_670">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.BeginStoryboard
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_671">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.BounceEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_672">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.CircleEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_674">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.Timeline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_673">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ColorAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_675">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_676">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ColorKeyFrameCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_678">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_677">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_679">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ContentThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_680">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_681">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.CubicEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_683">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ColorKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_682">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DiscreteColorKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_685">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_684">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DiscreteDoubleKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_687">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ObjectKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_686">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_689">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PointKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_688">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DiscretePointKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_690">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DoubleAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_691">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_692">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DoubleKeyFrameCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_693">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_694">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_695">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_696">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_697">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DrillOutThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_698">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_699">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_700">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_701">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_702">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_703">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ElasticEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_704">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_705">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.EntranceThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_706">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ExponentialEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_707">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_708">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_709">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.KeySpline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_710">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_711">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_712">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_713">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.NavigationThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_714">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_715">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_716">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PaneThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_717">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PointAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_718">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_719">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_720">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_721">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PopInThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_722">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_723">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PopupThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_724">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.PowerEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_725">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.QuadraticEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_726">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.QuarticEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_727">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.QuinticEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_728">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.ReorderThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_729">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_730">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeTransition
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_731">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SineEase
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_732">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_733">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_734">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_735">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_736">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_737">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SplitOpenThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_738">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.Storyboard
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_739">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_740">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_741">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_742">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Animation.TimelineCollection
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_744">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.BitmapSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_743">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.BitmapImage
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_745">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_746">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_747">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.SurfaceImageSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_748">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.SvgImageSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_749">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_750">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Imaging.WriteableBitmap
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_752">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Media3D.Transform3D
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_751">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Media3D.CompositeTransform3D
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_753">
+            <summary>
+            Builder for Windows.UI.Xaml.Media.Media3D.PerspectiveTransform3D
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_754">
+            <summary>
+            Builder for Windows.UI.Xaml.Navigation.PageStackEntry
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_755">
+            <summary>
+            Builder for Windows.UI.Xaml.Printing.PrintDocument
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_757">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Shape
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_756">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Ellipse
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_758">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Line
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_759">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Path
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_760">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Polygon
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_761">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Polyline
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_762">
+            <summary>
+            Builder for Windows.UI.Xaml.Shapes.Rectangle
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_763">
+            <summary>
+            Builder for Uno.Diagnostics.UI.DiagnosticsOverlay
+            </summary>
+        </member>
+        <member name="T:PizzaApp.MetadataBuilder_764">
+            <summary>
+            Builder for Uno.UI.Toolkit.ElevatedView
+            </summary>
+        </member>
+        <member name="T:PizzaApp.GlobalStaticResources">
+            <summary>
+            Contains all the static resources defined for the application
+            </summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CartQuantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CartQuantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FromSearch">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FromSearch" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Searching">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Searching" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Pizza">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Pizza" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CartQuantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CartQuantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FromSearch">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FromSearch" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Searching">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Searching" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Pizza">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Pizza" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,175 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.XamlSourceGeneratorTracingFolder = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetFramework = net8.0-ios
+build_property.ProjectTypeGuidsProperty = 
+build_property.MSBuildProjectFullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\PizzaApp.csproj
+build_property.RootNamespace = PizzaApp
+build_property.RootNamespace = PizzaApp
+build_property.DefineConstantsProperty = __IOS__,__MOBILE__,__UNIFIED__,TRACE,DEBUG,NET,NET8_0,NETCOREAPP,HAS_UNO,UNO_HAS_FRAMEWORKELEMENT_MEASUREOVERRIDE,UNO_HAS_NO_IDEPENDENCYOBJECT,IOS,IOS18_0,NET5_0_OR_GREATER,NET6_0_OR_GREATER,NET7_0_OR_GREATER,NET8_0_OR_GREATER,NETCOREAPP1_0_OR_GREATER,NETCOREAPP1_1_OR_GREATER,NETCOREAPP2_0_OR_GREATER,NETCOREAPP2_1_OR_GREATER,NETCOREAPP2_2_OR_GREATER,NETCOREAPP3_0_OR_GREATER,NETCOREAPP3_1_OR_GREATER,IOS10_0_OR_GREATER,IOS10_1_OR_GREATER,IOS10_2_OR_GREATER,IOS11_0_OR_GREATER,IOS11_1_OR_GREATER,IOS11_2_OR_GREATER,IOS11_3_OR_GREATER,IOS11_4_OR_GREATER,IOS12_0_OR_GREATER,IOS12_1_OR_GREATER,IOS12_2_OR_GREATER,IOS12_3_OR_GREATER,IOS12_4_OR_GREATER,IOS13_0_OR_GREATER,IOS13_1_OR_GREATER,IOS13_2_OR_GREATER,IOS13_3_OR_GREATER,IOS13_4_OR_GREATER,IOS13_5_OR_GREATER,IOS13_6_OR_GREATER,IOS14_0_OR_GREATER,IOS14_1_OR_GREATER,IOS14_2_OR_GREATER,IOS14_3_OR_GREATER,IOS14_4_OR_GREATER,IOS14_5_OR_GREATER,IOS15_0_OR_GREATER,IOS15_2_OR_GREATER,IOS15_4_OR_GREATER,IOS16_0_OR_GREATER,IOS16_1_OR_GREATER,IOS16_2_OR_GREATER,IOS16_4_OR_GREATER,IOS17_0_OR_GREATER,IOS17_2_OR_GREATER,IOS17_4_OR_GREATER,IOS17_5_OR_GREATER,IOS18_0_OR_GREATER
+build_property.Configuration = Debug
+build_property.IntermediateOutputPath = obj\Debug\net8.0-ios\iossimulator-x64\
+build_property.AndroidApplication = 
+build_property.OutputType = Exe
+build_property.MSBuildProjectName = PizzaApp
+build_property.BuildingProject = false
+build_property.DesignTimeBuild = true
+build_property.UnoUISourceGeneratorDebuggerBreak = 
+build_property.BuildingInsideVisualStudio = true
+build_property.UnoPlatformIDE = 
+build_property.IsHotReloadHost = 
+build_property.UnoGenerateXamlSourcesProvider = 
+build_property.UnoForceHotReloadCodeGen = 
+build_property.UnoForceIncludeProjectConfiguration = 
+build_property.UnoForceIncludeServerProcessorsConfiguration = 
+build_property.IsUnoHead = 
+build_property.IsUnoHead = 
+build_property.UnoDisableHotRestartHelperGeneration = 
+build_property.RuntimeIdentifier = iossimulator-x64
+build_property.UnoRuntimeIdentifier = 
+build_property.UnoHotReloadMode = 
+build_property.SolutionFileName = PizzaApp.sln
+build_property.LangName = en-US
+build_property.LangID = 1033
+build_property.SolutionDir = D:\4d\Pizza App\PizzaApp\
+build_property.SolutionExt = .sln
+build_property.UseHostCompilerIfAvailable = true
+build_property.DefineExplicitDefaults = true
+build_property.Platform = AnyCPU
+build_property.SolutionPath = D:\4d\Pizza App\PizzaApp\PizzaApp.sln
+build_property.SolutionName = PizzaApp
+build_property.VSIDEResolvedNonMSBuildProjectOutputs = <VSIDEResolvedNonMSBuildProjectOutputs />
+build_property.DevEnvDir = D:\VS\Common7\IDE\
+build_property.MSBuildVersion = 17.13.19
+build_property.UseWPF = 
+build_property.UnoRemoteControlPort = 
+build_property.UnoRemoteControlHost = 
+build_property.UnoRemoteControlProcessorsPath = 
+build_property.UnoRemoteControlConfigCookie = 
+build_property.UnoHotReloadDiagnosticsLogPath = 
+build_property.AppendRuntimeIdentifierToOutputPath = true
+build_property.OutputPath = bin\Debug\net8.0-ios\iossimulator-x64\
+build_property.UnoDisableBindableTypeProvidersGeneration = 
+build_property.ShouldWriteErrorOnInvalidXaml = 
+build_property.IsUiAutomationMappingEnabled = 
+build_property.ShouldAnnotateGeneratedXaml = 
+build_property.DefaultLanguage = 
+build_property.UnoPlatformTelemetryOptOut = 
+build_property.UnoPlatformDefaultSymbolsFontFamily = ms-appx:///Uno.Fonts.Fluent/Fonts/uno-fluentui-assets.ttf
+build_property.ExcludeXamlNamespacesProperty = win,not_mux,android,wasm,macos,skia,not_ios
+build_property.IncludeXamlNamespacesProperty = xamarin,not_win,legacy,ios,not_android,not_wasm,not_macos,not_skia,not_netstdref
+build_property.XamlGeneratorAnalyzerSuppressionsProperty = csharp-618 // Ignore obsolete members warnings,csharp-105 // Ignore duplicate namespaces,csharp-1591 // Ignore missing XML comment warnings,csharp-CS8669 // Ignore annotation for nullable reference types,csharp-CS9113 // Parameter is unread
+build_property.UnoEnableXamlFuzzyMatching = 
+build_property.UnoXamlResourcesTrimming = 
+build_property.BaseIntermediateOutputPath = obj\
+build_property.AssemblyName = PizzaApp
+build_property.UnoDefaultFont = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.ProjectDir = D:\4d\Pizza App\PizzaApp\PizzaApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/App.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\App.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\App.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/AppShell.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\AppShell.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\AppShell.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Pages/AllPizzasPage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Pages\AllPizzasPage.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\AllPizzasPage.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\AllPizzasPage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Pages.AllPizzasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AllPizzasPage.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Pages/DetailPage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Pages\DetailPage.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\DetailPage.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\DetailPage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Pages.DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DetailPage.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Pages/HomePage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Pages\HomePage.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\HomePage.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\HomePage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Pages.HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HomePage.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Pages/MainPage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\MainPage.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Pages\MainPage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Pages.MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/4d/Pizza App/PizzaApp/PizzaApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.FullPath = D:\4d\Pizza App\PizzaApp\PizzaApp\Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.Identity = D:\4d\Pizza App\PizzaApp\PizzaApp\Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PizzaApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
